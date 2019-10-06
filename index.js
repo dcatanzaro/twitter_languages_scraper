@@ -92,15 +92,15 @@ function getAllTweets(maxId = "") {
 
 getAllTweets();
 
-const results = arResults.map(result => {
-    return orderObj(result);
-});
-console.log("First language", results[0]);
-console.log("Had difficulties", results[1]);
-console.log("Most used", results[2]);
-console.log("Totally hate", results[3]);
-console.log("Most loved", results[4]);
-console.log("For beginners", results[5]);
+// const results = arResults.map(result => {
+//     return orderObj(result);
+// });
+// console.log("First language", results[0]);
+// console.log("Had difficulties", results[1]);
+// console.log("Most used", results[2]);
+// console.log("Totally hate", results[3]);
+// console.log("Most loved", results[4]);
+// console.log("For beginners", results[5]);
 
 function orderObj(obj) {
     const keys = Object.keys(obj).sort((a, b) => (obj[a] < obj[b] ? 1 : -1));
